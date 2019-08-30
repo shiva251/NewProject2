@@ -1,0 +1,56 @@
+<div class="middle">
+
+    <div class="list1">
+        <!-- <ul>
+            <li (click)="showDetails()"><a routerLink="/link">
+                    <h2> Notes..</h2>
+                </a></li>
+        </ul> -->
+        <table class="table table-striped table-bordered">
+            <tbody>
+                <tr *ngFor="let emp of employeeService.allEmployee" (ngBind)="emp.title" (click)="show( emp.title)">
+                    <td><a>
+                            <h3>{{emp.title}}</h3>
+                        </a></td>
+                    <td>
+                        <p>{{emp.description | limitTo:20}} </p>
+                    </td>
+                    <td>
+                        <span> <a class="btn text-danger" (click)="deleteEmployee(emp.id)">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+                            <a class="btn" (click)="updateEmployee(emp)">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </a></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- <div class="emp-form">
+            <input placeholder="title" class="form-control" [(ngModel)]="employeeService.currentEmployee.tittle">
+            <input placeholder="description" class="form-control"
+                [(ngModel)]="employeeService.currentEmployee.discription">
+            <button class="btn btn-success btn-lg" (click)="createEmployee(employeeService.currentEmployee)">
+                <i class="fa fa-save"></i>
+                CreateNote
+            </button>
+        </div> -->
+
+        <button class="btn btn-danger" style="width:100px" (click)="showDetails()"><a routerLink="/link"></a>Add
+            Note
+        </button>
+
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="right1" contenteditable="true">
+        <ul>
+            <li *ngFor="let ss of details ">
+                <h2>{{ss.title}}</h2>
+                <p>{{ss.description}}</p>
+            </li>
+        </ul>
+        <!-- <router-outlet></router-outlet> -->
+
+    </div>
+
+</div>

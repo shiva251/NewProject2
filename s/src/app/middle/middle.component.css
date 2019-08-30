@@ -1,0 +1,33 @@
+.middle {
+    width: 100%;
+    margin-left: 15%; 
+    margin-top: 60px;
+    /* position: absolute; */
+    float: left;
+    font-size: 20px;
+    box-shadow: -3px 0px 5px 1px #aaaaaa;
+
+}
+.list1 {
+    width:40%;
+    /* background-color: red; */
+    height: 600px;
+    float: left;
+    margin-top: -15px;
+}
+ul li {
+    list-style-type: none;
+    font-size: 25px;    
+}
+.right1 {
+    width: 50%;
+    height: 702px;
+    font-size: 20px;
+    margin-left: 41%;
+    margin-top: -7px;
+    box-shadow: -3px 0px 5px 1px #aaaaaa;
+    /* position: absolute; */
+    /* position: fixed; */
+    padding: 20px;
+    box-sizing: border-box;
+}

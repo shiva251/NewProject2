@@ -1,0 +1,50 @@
+body {margin:0;}
+#note {
+  margin-left:270px;
+}
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  position: fixed;
+}
+
+.icon-bar a {
+  float: left;
+  width: 10%;
+  text-align: center;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 25px;
+
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+  margin-left:10%;
+}
+.icon-bar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 20%;
+  background: #f1f1f1;
+  margin-left: 15%;
+}
+
+.icon-bar button {
+  /* float: left; */
+  /* width: 20%; */
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<div class="sidenav">
+    <!-- <ul>
+        <li><a routerLink="/list">
+                <h3><span class="glyphicon glyphicon-folder-close"></span> Folder</h3>
+            </a></li>
+
+
+    </ul> -->
+    <div id="wrapper" [ngClass]="ref.click === true? 'toggled' :''">
+        <div class="overlay" [ngStyle]="{disply:ref.click === true? 'block' :'none'}"></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Folders List
+                    </a>
+                </li>
+                <li><a routerLink="/list">
+                        <h3><span class="glyphicon glyphicon-folder-close"></span> Folder</h3>
+                    </a></li>
+
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button appSidebar #ref="appSidebar" type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+        </div>
+
+        <!-- <button type="button" class="btn btn-success newfolder" (click)="onSubmit()"><span
+            class="glyphicon glyphicon-plus-sign"></span>
+        NewFolder</button> -->
